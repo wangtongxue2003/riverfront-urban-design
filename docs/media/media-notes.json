@@ -1,0 +1,63 @@
+{
+  "description": "Compressed historical course results. These previews are not a rerun of the synthetic demo. Original site data and full-resolution GIFs are not distributed.",
+  "media": [
+    {
+      "source_file": "生成1.gif",
+      "historical_course_result": true,
+      "source_bytes": 161827195,
+      "source_dimensions": [
+        2560,
+        1600
+      ],
+      "source_frames": 194,
+      "source_duration_ms": 9700,
+      "output_file": "showcase.gif",
+      "output_bytes": 1015491,
+      "dimensions": [
+        800,
+        500
+      ],
+      "frames": 65,
+      "duration_ms": 9700,
+      "method": "Pillow Lanczos resize; keep one in three frames with accumulated duration; 128-color shared palette; no dithering; GIF frame optimization",
+      "still": {
+        "file": "overview.jpg",
+        "source_frame": 193,
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 371621
+      }
+    },
+    {
+      "source_file": "生成3.gif",
+      "historical_course_result": true,
+      "source_bytes": 169582251,
+      "source_dimensions": [
+        2560,
+        1600
+      ],
+      "source_frames": 244,
+      "source_duration_ms": 12200,
+      "output_file": "courtyard-walkthrough.gif",
+      "output_bytes": 2957006,
+      "dimensions": [
+        800,
+        500
+      ],
+      "frames": 82,
+      "duration_ms": 12200,
+      "method": "Pillow Lanczos resize; keep one in three frames with accumulated duration; 128-color shared palette; no dithering; GIF frame optimization",
+      "still": {
+        "file": "courtyard-detail.jpg",
+        "source_frame": 182,
+        "dimensions": [
+          1600,
+          1000
+        ],
+        "bytes": 177183
+      }
+    }
+  ]
+}

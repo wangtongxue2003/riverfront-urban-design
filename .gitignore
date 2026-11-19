@@ -1,0 +1,25 @@
+# Local inputs and generated models/results are deliberately not distributed.
+/private-data/
+/Rhino/
+/output/
+/target/
+/.m2/
+/.tools/
+*.3dm
+!assets/components/door-and-window.3dm
+*.3dmbak
+*.csv
+*.archijson
+*.class
+*.log
+*.zip
+
+# IDE / OS state
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db

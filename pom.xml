@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>urban.design</groupId>
+  <artifactId>riverfront-urban-design</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <name>Riverfront Urban Design</name>
+  <description>Java research prototype for riverfront blocks and courtyard typologies.</description>
+  <properties>
+    <maven.compiler.release>23</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <jmetal.version>6.6</jmetal.version>
+    <exec.mainClass>examples.SyntheticCourtyardDemo</exec.mainClass>
+  </properties>
+  <repositories>
+    <repository><id>central</id><url>https://repo.maven.apache.org/maven2</url></repository>
+    <repository><id>jitpack.io</id><url>https://jitpack.io</url></repository>
+  </repositories>
+  <dependencies>
+    <dependency><groupId>org.uma.jmetal</groupId><artifactId>jmetal-core</artifactId><version>${jmetal.version}</version></dependency>
+    <dependency><groupId>org.uma.jmetal</groupId><artifactId>jmetal-algorithm</artifactId><version>${jmetal.version}</version></dependency>
+    <dependency><groupId>org.uma.jmetal</groupId><artifactId>jmetal-problem</artifactId><version>${jmetal.version}</version></dependency>
+    <dependency><groupId>org.uma.jmetal</groupId><artifactId>jmetal-component</artifactId><version>${jmetal.version}</version></dependency>
+    <dependency><groupId>com.github.twak</groupId><artifactId>campskeleton</artifactId><version>0.0.1</version></dependency>
+    <dependency><groupId>org.locationtech.jts</groupId><artifactId>jts-core</artifactId><version>1.16.1</version></dependency>
+    <dependency><groupId>org.eclipse.collections</groupId><artifactId>eclipse-collections</artifactId><version>9.0.0</version></dependency>
+    <dependency><groupId>org.eclipse.collections</groupId><artifactId>eclipse-collections-api</artifactId><version>9.0.0</version></dependency>
+    <dependency><groupId>com.fathzer</groupId><artifactId>javaluator</artifactId><version>3.0.2</version></dependency>
+    <dependency><groupId>com.google.code.gson</groupId><artifactId>gson</artifactId><version>2.10.1</version></dependency>
+    <dependency><groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId><version>3.12.0</version></dependency>
+    <dependency><groupId>gov.nist.math</groupId><artifactId>jama</artifactId><version>1.0.3</version></dependency>
+    <dependency><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter</artifactId><version>5.10.3</version><scope>test</scope></dependency>
+    <!-- Original binary dependencies without reliable Maven coordinates. Keep exact supplied builds. -->
+    <dependency><groupId>local.original</groupId><artifactId>hemesh</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/hemesh.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>hemesh-data-3_0_0</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/hemesh-data-3_0_0.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>hemesh-external-6_0_0</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/hemesh-external-6_0_0.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>hemesh-lab</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/hemesh-lab.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>igeo</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/igeo.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>core</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/core.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>jogl-all</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/jogl-all.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>gluegen-rt</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/gluegen-rt.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>jogl-all-natives-windows-amd64</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/jogl-all-natives-windows-amd64.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>gluegen-rt-natives-windows-amd64</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/gluegen-rt-natives-windows-amd64.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>peasycam</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/peasycam.jar</systemPath></dependency>
+    <dependency><groupId>local.original</groupId><artifactId>peasy-math</artifactId><version>1.0</version><scope>system</scope><systemPath>${project.basedir}/lib/peasy-math.jar</systemPath></dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.13.0</version></plugin>
+      <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>3.2.5</version><configuration><useModulePath>false</useModulePath></configuration></plugin>
+      <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId><version>3.4.2</version></plugin>
+      <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId><version>3.7.1</version></plugin>
+      <plugin><groupId>org.codehaus.mojo</groupId><artifactId>exec-maven-plugin</artifactId><version>3.3.0</version><configuration><mainClass>${exec.mainClass}</mainClass><classpathScope>compile</classpathScope></configuration></plugin>
+    </plugins>
+  </build>
+</project>
