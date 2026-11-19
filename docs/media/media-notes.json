@@ -58,6 +58,22 @@
         ],
         "bytes": 177183
       }
+    },
+    {
+      "source_file": "User-provided courtyard typology diagram (JPEG attachment)",
+      "historical_course_result": true,
+      "source_bytes": 7911444,
+      "source_dimensions": [
+        12891,
+        7432
+      ],
+      "output_file": "courtyard-typologies.jpg",
+      "output_bytes": 476638,
+      "dimensions": [
+        3200,
+        1845
+      ],
+      "method": "System.Drawing high-quality bicubic resize; preserve aspect ratio and diagram content; JPEG quality 90; no AI redrawing"
     }
   ]
 }

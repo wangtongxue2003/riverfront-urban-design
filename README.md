@@ -10,11 +10,11 @@
 >
 > Original project completed in **December 2024**. This repository also includes subsequent release preparation and compatibility fixes.
 
-![原课程项目的街区生成动画](docs/media/showcase.gif)
+![原课程项目的院落近景动画](docs/media/courtyard-walkthrough.gif)
 
-展示图来自原课程成果动画，经缩放和抽帧压缩。它们展示历史设计成果，不代表此次重新运行并验证了完整场地优化。
+动画来自原课程成果记录，经缩放和抽帧压缩。它展示历史设计成果，不代表此次重新运行并验证了完整场地优化。
 
-[查看院落近景动画与完整图集](docs/GALLERY.md)
+[查看街区生成动画与完整图集](docs/GALLERY.md)
 
 ## 可以做什么
 
@@ -25,6 +25,12 @@
 | 公共空间评价 | 估算到公共空间的路网最短距离，以及开敞边张角代理指标 |
 | 多目标搜索 | 通过 jMetal NSGA-II 搜索面积、距离、层数起伏等指标之间的取舍 |
 | 地块更新 | 按可达性筛选地块，搜索近似最大内接矩形，再生成院落 |
+
+## 院落类型与组合规则
+
+院墙、正房与厢房的组合，以及不同层数模式对应的院落类型与平面关系。点击图片可查看大图。
+
+[![院落类型、构件组合与平面关系](docs/media/courtyard-typologies.jpg)](docs/media/courtyard-typologies.jpg)
 
 ## 快速开始：不需要原始场地数据
 
